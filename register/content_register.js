@@ -1,11 +1,11 @@
 var form="<table width=60% align=center border=1>"+
         "<tr><td colspan=2 align=center>Register details"+
         "<tr><td width=20%>Firstname<td><input type='text' name='firstname' id='firstname' placeholder='Enter firstname'>"+
-        "<tr><td width=20%>Lastname<td><input type='text' name='lastname' id='lastname' placeholder='Enter lastname'><br>"+
-        "<tr><td width=20%>Username<td><input type='text' name='username' id='username' placeholder='Enter username'><br>"+
-        "<tr><td width=20%>Password<td><input type='password' name='password' id='password' placeholder='Enter password'><br>"+
-        "<tr><td width=20%>Country<td><input type='text' name='country' id='country' placeholder='Enter country'><br>"+
-        "<tr><td width=20%>Email<td><input type='text' name='email' id='email' placeholder='Enter email'><br>"+        
+        "<tr><td width=20%>Lastname<td><input type='text' name='lastname' id='lastname' placeholder='Enter lastname'>"+
+        "<tr><td width=20%>Username<td><input type='text' name='username' id='username' placeholder='Enter username'>"+
+        "<tr><td width=20%>Password<td><input type='password' name='password' id='password' placeholder='Enter password'>"+
+        "<tr><td width=20%>Country<td><input type='text' name='country' id='country' placeholder='Enter country'>"+
+        "<tr><td width=20%>Email<td><input type='text' name='email' id='email' placeholder='Enter email'>"+        
         "<tr><td colspan=2 align='center'><button id='submitBtn'>Submit</button>";
 
 $("#content").html(form);
@@ -30,7 +30,7 @@ $("#submitBtn").click(function() {
 			if(response === true) {
 				location.replace("/register/registerSuccess.html");
 			} else {
-				console.log(response);
+				
 				location.replace("/register/registerFailure.html");
 			}
 		});	
