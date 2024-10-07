@@ -30,7 +30,6 @@ $("#submitBtn").click(function() {
 			if(response === true) {
 				location.replace("/register/registerSuccess.html");
 			} else {
-				
 				location.replace("/register/registerFailure.html");
 			}
 		});	

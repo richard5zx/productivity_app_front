@@ -1,29 +1,29 @@
 @charset "UTF-8";
 
 .header {
-    width:40%;
-    height:100px;
-    background-color:#af1b3f;
-    margin-left:30%;
+    width: 60%;
+    height: 100px;
+    background-color: #ff595e;
+    margin-left: 20%;
 }
 
 .navigation {
-    width:40%;
-    height:50px;
-    background-color:#87F5FB;
-    margin-left:30%;
+    width: 60%;
+    height: 50px;
+    background-color: #ffca3a;
+    margin-left: 20%;
 }
 
 .content {
-    width:40%;
-    height:400px;
-    background-color:#2a4494;
-    margin-left:30%;
+    width: 60%;
+    height: 400px;
+    background-color: #8ac926;
+    margin-left: 20%;
 }
 
 .footer {
-    width:40%;
-    height:50px;
-    background-color:#777DA7;
-    margin-left:30%;
+    width: 60%;
+    height: 50px;
+    background-color: #1982c4;
+    margin-left: 20%;
 }
