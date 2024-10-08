@@ -16,6 +16,8 @@ $("#submitBtn").click(function() {
 		if(!$.trim(response)) {
 			location.replace("/login/loginFailure.html");
 		} else {
+			sessionStorage.setItem('user', response);
+			console.log(sessionStorage.getItem('user').val);
 			location.replace("/expense/expense_browse.html");
 		}
 	})
