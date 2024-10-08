@@ -16,7 +16,7 @@ $("#submitBtn").click(function() {
 		if(!$.trim(response)) {
 			location.replace("/login/loginFailure.html");
 		} else {
-			location.replace("/expense/expenseIndex.html");
+			location.replace("/expense/expense_browse.html");
 		}
 	})
 });

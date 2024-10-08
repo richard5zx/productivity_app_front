@@ -1,29 +1,29 @@
 @charset "UTF-8";
 
 .header {
-    width: 60%;
-    height: 100px;
+    width: 90%;
+    height: 50px;
     background-color: #ff595e;
-    margin-left: 20%;
+    margin-left: 5%;
 }
 
 .navigation {
-    width: 60%;
+    width: 90%;
     height: 50px;
     background-color: #ffca3a;
-    margin-left: 20%;
+    margin-left: 5%;
 }
 
 .content {
-    width: 60%;
+    width: 90%;
     height: 400px;
     background-color: #8ac926;
-    margin-left: 20%;
+    margin-left: 5%;
 }
 
 .footer {
-    width: 60%;
+    width: 90%;
     height: 50px;
     background-color: #1982c4;
-    margin-left: 20%;
+    margin-left: 5%;
 }
