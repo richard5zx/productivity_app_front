@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $.ajax({
         type:'get',
-        url:'http://192.168.1.136:8080/showAllExpenses',
+        url:'http://192.168.1.136:8080/expense/showAllExpenses',
         success:function(data) {
             var table_start =
             "<table width=100% align='center' border=1> " +
