@@ -14,13 +14,13 @@ $("#submitBtn").click(function() {
 		password:password
 	}, function(response) {
 		if(!$.trim(response)) {
-			//location.replace("/login/loginFailure.html");
+			location.replace("/login/loginFailure.html");
 		} else {
 			sessionStorage.setItem("user", response);
-			console.log(response);
-			console.log(sessionStorage.getItem("user").username);
-			// console.log(sessionStorage.getItem('user').username);
-			//location.replace("/expense/expense_browse.html");
+			//console.log(response);
+			//console.log(sessionStorage.getItem("user").username);
+			//console.log(sessionStorage.getItem('user').username);
+			location.replace("/expense/expense_browse.html");
 		}
 	})
 });
