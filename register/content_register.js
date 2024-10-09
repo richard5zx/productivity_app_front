@@ -19,7 +19,7 @@ $("#submitBtn").click(function() {
 	var country = $("#country").val();
 	var email = $("#email").val();
 		
-	$.get("http://192.168.1.136:8080/register",{
+	$.post("http://192.168.1.136:8080/user/register",{
 			firstname:firstname,
 			lastname:lastname,
 			username:username,
