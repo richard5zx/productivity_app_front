@@ -16,7 +16,7 @@ $("#submitBtn").click(function() {
 		if(!$.trim(response)) {
 			location.replace("/login/loginFailure.html");
 		} else {
-			sessionStorage.setItem("user_id", JSON.stringify(response)); // Session only stores strings. So we need to make the object a string. Retrieve using "JSON.parse(sessionStorage.getItem('xyzObject'));"
+			sessionStorage.setItem("user", JSON.stringify(response)); // Session only stores strings. So we need to make the object a string. Retrieve using "JSON.parse(sessionStorage.getItem('xyzObject'));"
 			location.replace("/expense/expense_browse.html");
 		}
 	})

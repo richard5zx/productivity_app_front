@@ -1,5 +1,4 @@
-var user_id = sessionStorage.getItem("user").user_id;
-console.log(user_id);
+var user = JSON.parse(sessionStorage.getItem('user'));
 
 var form = 
 "<table width=60% align=center border=1" +
@@ -30,39 +29,25 @@ var form =
 $("#content").html(form);
 
 $("#addBtn").click(function() {
-    var user_id = sessionStorage.getItem("user").user_id;
     var category = $("#category").val();
     var description = $("#description").val();
-    var expense = $("#expense");
-    var currency = $("#currency");
-    $.get("http://192.168.1.136:8080/expense/addExpense", {
-        user_id:user_id,
+    var expense = Number($("#expense").val());
+    var currency = $("#currency").val();
+    $.post("http://192.168.1.136:8080/expense/addExpense", {
+        user_id:user.user_id,
         category:category,
         description:description,
         expense:expense,
         currency:currency
-    }),
-    function(response) {
-    }
+    }, function(response) {
+        alert("Expense added");
+        clearField();
+    })
 });
 
-/*
-
-$("#submitBtn").click(function() {
-	var username = $("#username").val();
-	var password = $("#password").val();
-	$.get("http://192.168.1.136:8080/login", {
-		username:username,
-		password:password
-	}, function(response) {
-		if(!$.trim(response)) {
-			location.replace("/login/loginFailure.html");
-		} else {
-			sessionStorage.setItem('user', response);
-			console.log(sessionStorage.getItem('user').val);
-			location.replace("/expense/expense_browse.html");
-		}
-	})
-});
-
-*/
+function clearField() {
+    $("#category").val("");
+    $("#description").val("");
+    $("#expense").val("");
+    $("#currency").val("");
+}
